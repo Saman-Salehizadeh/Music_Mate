@@ -11,6 +11,7 @@ setup(
         "soundfile==0.13.1",
         "basic-pitch==0.4.0",
         "music21==9.9.1",
+        "tf-keras==2.15.0",
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
