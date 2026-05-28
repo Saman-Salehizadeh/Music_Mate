@@ -1,4 +1,4 @@
-#Music-Mate
+# Music-Mate
 Music-Mate is a python library that gets your voice or video and gives you its notes in a PDF.
 To install it, run this prompt on terminal:
 ```bash
