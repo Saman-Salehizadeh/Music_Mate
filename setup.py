@@ -1,7 +1,7 @@
 from setuptools import setup,find_packages
 setup(
     name="Music_Mate",
-    version="0.1.0",
+    version="0.1.0a1",
     packages=find_packages(),
     install_requires=[
         "imageio-ffmpeg==0.6.0",
