@@ -10,7 +10,7 @@ from os.path import splitext, basename, join, dirname
 from os import makedirs
 from lilypond import executable
 from tempfile import TemporaryDirectory
-from shutil import copy2
+from shutil import copy2, copy
 from platform import system
 lilypond_path=str(executable())
 if system()=="Windows" and not lilypond_path.lower().endswith('.exe'):
@@ -69,5 +69,9 @@ def media_to_notes(input_path,output_path,lilypond_path=lilypond_path):
             
         #Making The PDF
         run([lilypond_path,"-I",tmp,"-o",join(tmp,file_name),join(tmp,file_name+'.ly')],check=True)
-        copy2(join(tmp,file_name+'.pdf'),output_path)
+        try:
+            copy2(join(tmp,file_name+'.pdf'),output_path)
+        except:
+            copy(join(tmp,file_name+'.pdf'),output_path)
+
         print(f"Notes PDF saved to {output_path}.")
