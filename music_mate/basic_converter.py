@@ -99,4 +99,4 @@ def media_to_notes(input_path,output_path):
                 destination=join(supplementary_dir,basename(supplementary_file))
                 copy(supplementary_file,destination)
             print(f"Supplementary files saved to {supplementary_dir}.")
-        print(f"Notes PDF saved to {output_path}.")
+        print(f"Notes PDF saved to {abspath(output_path)}.")
