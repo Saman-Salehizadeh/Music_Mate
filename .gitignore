@@ -1,0 +1,11 @@
+/a2p/
+/a2p2/
+/data/
+/Instructions.txt
+/try3.txt
+/try4.txt
+__pycache__/
+*.mid
+*.ckpt
+*.npy
+log
