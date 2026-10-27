@@ -78,6 +78,17 @@ Music_Mate uses **MuScriptor** to transcribe the input audio and extract musical
 
 Music_Mate uses **LilyPond** to engrave the reduced piano notes and generate the final PDF score.
 
+## Tested Hardware
+
+The project has been tested on the following hardware configuration:
+
+- **Laptop:** MSI Cyborg 15 A12VF
+- **CPU:** Intel Core i7-12650H
+- **GPU:** NVIDIA GeForce RTX 4060 Laptop GPU
+- **GPU Memory (VRAM):** 8 GB GDDR6
+- **System RAM:** 16 GB DDR5
+- **Operating System:** Windows 11 Pro with WSL2 running Ubuntu 26.04 LTS
+
 ## License and Attribution
 
 Please refer to the original `piano-reduction-with-midibert` repository for the license and attribution requirements of the upstream code.
